@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            height: 100%;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 50px 80px 80px 75px;
+            grid-template-areas: 
+            "n n n n n n n n n n"
+            "h h h h h h h h h h"
+            "s s c c c c c c c c"
+            ". . f f f f f f . .";
+
+        }
+
+        .navbar {
+            grid-area: n;
+            background-color: purple;
+            
+        }
+
+        .hero {
+            grid-area: h;
+            background-color: pink;
+            
+        }
+
+        .content {
+            grid-area: c;
+            background-color: red;
+            
+        }
+
+        .sidebar {
+            grid-area: s;
+            background-color: lightblue;
+            
+        }
+
+        .footer {
+            grid-area: f;
+            background-color: yellow;
+            
+        }
+        </style>
+        
+        </head>
+        <body>
+            <div class="container">
+                <div class="navbar">Home Blog Docs</div>
+                <div class="hero">Hello to my site!</div>
+                <div class="content">Home Blog Docs</div>
+                <div class="sidebar">Lorem ipsum....</div>
+                <div class="footer">Copyright c 2022 by Hayat</div>
+            </div>
+        </body>
+</html>
+
+<!-- // you can write to stdout for debugging purposes, e.g.
+// console.log('this is a debug message');
+
+function solution(A) {
+// write your code in JavaScript (Node.js 14)
+
+A.sort(function(a, b){return b-a});
+for(let i = 0; i < A.length; i++){ if(A[i] % 4===0){ return A[i]; } } } -->

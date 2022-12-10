@@ -7,7 +7,7 @@ function removeVowelsFromWords(words) {
 
   return result;
 }
-
+// console.log(removeVowelsFromWords(["Irina", "Etza", "Daniel"]));
 module.exports = removeVowelsFromWords;
 
 /*
